@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "\nRunning pre-commit: pnpm lint-staged"
+
+pnpm lint-staged
+
+# echo -e "Running pre-commit: 2/2 npm run pretty"
+
+# npm run pretty

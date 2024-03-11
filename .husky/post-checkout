@@ -1,0 +1,8 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "Running post-checkout: pnpm install"
+
+pnpm install
+
+echo "\n"
